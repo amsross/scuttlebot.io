@@ -1,15 +1,15 @@
 ## Fetch the social graph
 
-You can see who follows whom by calling the `friends.all` method.
+You can see who follows whom by calling the `friends.stream` method.
 It will provide an object of `{ userId => [followedIds] }`.
 
 ```js
-sbot.friends.all(function (err, graph) {
+sbot.friends.stream(function (err, graph) {
   // ...
 })
 ```
 ```bash
-sbot friends.all
+sbot friends.stream
 ```
 
 Example output:
